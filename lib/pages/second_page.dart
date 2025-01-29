@@ -21,10 +21,6 @@ class SecondPage extends StatelessWidget {
                 fontSize: 50,
               ),
             ),
-            ElevatedButton(
-              onPressed: () {},
-              child: Text("Go to Second Page"),
-            ),
           ],
         ),
       ),
