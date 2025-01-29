@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:lesson5_2/pages/second_page.dart';
 
 import 'pages/home_page.dart';
 
