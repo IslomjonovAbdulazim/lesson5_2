@@ -7,11 +7,20 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Center(
-        child: Text(
-          "Home Page",
-          style: TextStyle(
-            fontSize: 50,
-          ),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Text(
+              "Home Page",
+              style: TextStyle(
+                fontSize: 50,
+              ),
+            ),
+            ElevatedButton(
+              onPressed: () {},
+              child: Text("Go to Second Page"),
+            ),
+          ],
         ),
       ),
     );
