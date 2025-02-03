@@ -13,9 +13,7 @@ class HomePage extends StatelessWidget {
           children: [
             Text(
               "Home Page",
-              style: TextStyle(
-                fontSize: 50,
-              ),
+              style: TextStyle(fontSize: 50),
             ),
             ElevatedButton(
               onPressed: () {},
