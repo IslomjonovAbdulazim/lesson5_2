@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 
 class SecondPage extends StatelessWidget {
-  const SecondPage({super.key});
+  final String message;
+
+  const SecondPage({super.key, required this.message});
 
   @override
   Widget build(BuildContext context) {
@@ -12,7 +14,9 @@ class SecondPage extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             ElevatedButton(
-              onPressed: () {},
+              onPressed: () {
+                Navigator.pop(context);
+              },
               child: Text("Back to Home Page"),
             ),
             Text(
@@ -20,6 +24,10 @@ class SecondPage extends StatelessWidget {
               style: TextStyle(
                 fontSize: 50,
               ),
+            ),
+            Text(
+              "Sirli xabar: $message",
+              style: TextStyle(fontSize: 30),
             ),
           ],
         ),
